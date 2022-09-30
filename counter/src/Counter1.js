@@ -8,6 +8,9 @@ function Counter1() {
   const remove = () => {
     setCounter(counter - 1);
   };
+  const clear = () => {
+    setCounter(0);
+  };
 
   return (
     <div className="Counter1">
@@ -15,6 +18,7 @@ function Counter1() {
         <h2>Counter: {counter}</h2>
         <button onClick={add}>+</button>
         <button onClick={remove}>-</button>
+        <button onClick={clear}>Clear</button>
       </div>
     </div>
   );
