@@ -15,10 +15,35 @@ function Counter1() {
   return (
     <div className="Counter1">
       <div>
-        <h2>Counter: {counter}</h2>
-        <button onClick={add}>+</button>
-        <button onClick={remove}>-</button>
-        <button onClick={clear}>Clear</button>
+        <h1
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          Counter 1
+        </h1>
+        <h2
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {counter}
+        </h2>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <button onClick={add}>+</button>
+          <button onClick={remove}>-</button>
+          <button onClick={clear}>Clear</button>
+        </div>
       </div>
     </div>
   );
