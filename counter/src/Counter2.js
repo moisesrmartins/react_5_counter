@@ -42,8 +42,8 @@ class Counter2 extends Component {
             }}
           >
             <button onClick={this.add}>+</button>
-            <button onClick={this.remove}>-</button>
             <button onClick={this.clear}>Clear</button>
+            <button onClick={this.remove}>-</button>
           </div>
         </div>
       </div>

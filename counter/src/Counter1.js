@@ -41,8 +41,8 @@ function Counter1() {
           }}
         >
           <button onClick={add}>+</button>
-          <button onClick={remove}>-</button>
           <button onClick={clear}>Clear</button>
+          <button onClick={remove}>-</button>
         </div>
       </div>
     </div>
