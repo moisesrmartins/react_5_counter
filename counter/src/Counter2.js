@@ -5,6 +5,10 @@ class Counter2 extends Component {
   add = () => {
     this.setState({ counter: this.state.counter + 1 });
   };
+  remove = () => {
+    this.setState({ counter: this.state.counter - 1 });
+  };
+
   render() {
     return (
       <div className="Counter2">
@@ -35,6 +39,7 @@ class Counter2 extends Component {
             }}
           >
             <button onClick={this.add}>+</button>
+            <button onClick={this.remove}>-</button>
           </div>
         </div>
       </div>
