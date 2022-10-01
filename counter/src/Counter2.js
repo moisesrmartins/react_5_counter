@@ -2,6 +2,9 @@ import React, { Component } from "react";
 
 class Counter2 extends Component {
   state = { counter: 0 };
+  add = () => {
+    this.setState({ counter: this.state.counter + 1 });
+  };
   render() {
     return (
       <div className="Counter2">
@@ -24,6 +27,15 @@ class Counter2 extends Component {
           >
             {this.state.counter}
           </h2>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <button onClick={this.add}>+</button>
+          </div>
         </div>
       </div>
     );
